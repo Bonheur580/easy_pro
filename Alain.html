@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Why You're the Best</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(to right, #fff0f5, #f2e2ff);
+      color: #333;
+      padding: 5%;
+      position: relative;
+      overflow-x: hidden;
+      overflow-y: hidden;
+    }
+
+    h2 {
+      color: #a34ea0;
+      font-size: 3em;
+      text-align: center;
+      margin-bottom: 40px;
+      animation: fadeIn 2s ease-in-out;
+    }
+
+    ul {
+      list-style: none;
+      padding-left: 0;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 25px;
+      animation: slideUp 1.5s ease-in-out;
+      z-index: 1;
+    }
+
+    li {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 15px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+      font-size: 18px;
+      position: relative;
+      transition: transform 0.3s ease;
+      z-index: 1;
+    }
+
+    li::before {
+      content: '🌸';
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      font-size: 1.5em;
+    }
+
+    /* Hover flower animation */
+    @keyframes bloom {
+      0% { transform: scale(1); box-shadow: 0 0 0 rgba(0,0,0,0); }
+      50% { transform: scale(1.05); box-shadow: 0 0 15px rgba(255, 182, 193, 0.5); }
+      100% { transform: scale(1.03); box-shadow: 0 0 10px rgba(255, 182, 193, 0.3); }
+    }
+
+    li:hover {
+      animation: bloom 1.2s ease-in-out forwards;
+    }
+
+    footer {
+      margin-top: 60px;
+      text-align: center;
+      font-style: italic;
+      color: #777;
+      animation: fadeIn 2.5s ease-in-out;
+      z-index: 1;
+    }
+
+    .back-button {
+      display: block;
+      margin: 40px auto 20px;
+      text-align: center;
+      background-color: #a34ea0;
+      color: white;
+      padding: 12px 24px;
+      font-size: 16px;
+      border-radius: 8px;
+      text-decoration: none;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+      width: fit-content;
+      animation: fadeIn 2.5s ease-in-out;
+    }
+
+    audio {
+      display: block;
+      margin: 30px auto 0;
+      z-index: 1;
+    }
+
+    @keyframes fadeIn {
+      from {opacity: 0;}
+      to {opacity: 1;}
+    }
+
+    @keyframes slideUp {
+      from {transform: translateY(50px); opacity: 0;}
+      to {transform: translateY(0); opacity: 1;}
+    }
+
+    /* Floating petals */
+    .petal {
+      position: absolute;
+      width: 30px;
+      height: 30px;
+      background-image: url('petal.png');
+      background-size: contain;
+      background-repeat: no-repeat;
+      animation: float 12s linear infinite;
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    @keyframes float {
+      0% { top: -30px; opacity: 1; left: calc(50% - 15px); transform: rotate(0deg); }
+      100% { top: 110%; opacity: 0; left: calc(40% + 100px); transform: rotate(360deg); }
+    }
+
+    /* Responsive columns */
+    @media screen and (max-width: 1000px) {
+      ul {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media screen and (max-width: 600px) {
+      ul {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <h2>You’re Made of Love & Light ✨</h2>
+
+  <ul>
+    <li>🌷 You give love so freely, it blossoms in those around you.</li>
+    <li>🛡️ You shield us with fierce kindness and unwavering strength.</li>
+    <li>🎨 You paint every day with laughter, comfort, and beauty.</li>
+    <li>☀️ You are the sunrise in our lives, full of hope and warmth.</li>
+    <li>🦋 You nurture growth with patience, wisdom, and endless grace.</li>
+    <li>🍰 Your hugs taste like happiness. Your words feel like home.</li>
+    <li>💃 You turn routine into ritual, and chaos into calm.</li>
+    <li>👑 You reign with compassion. And your love? It's legendary.</li>
+  </ul>
+
+  <a href="Home.html" class="back-button">← Back to Greeting Page</a>
+
+  <footer>
+    Thank you for being the heart of our story. 💞 <br> With all my love, always — Your admirer 🌷
+  </footer>
+
+  <!-- 🎶 Soft background music -->
+  <audio controls autoplay loop>
+    <source src="your-mothers-day-music.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+
+  <!-- 🌸 Floating petals -->
+  <div class="petal" style="left: 10%; animation-delay: 0s;"></div>
+  <div class="petal" style="left: 30%; animation-delay: 2s;"></div>
+  <div class="petal" style="left: 50%; animation-delay: 4s;"></div>
+  <div class="petal" style="left: 70%; animation-delay: 6s;"></div>
+  <div class="petal" style="left: 90%; animation-delay: 8s;"></div>
+
+</body>
+</html>

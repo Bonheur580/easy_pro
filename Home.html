@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Happy Mother's Day</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(to bottom right, #fff0f5, #f9e4ff);
+      color: #333;
+      padding: 5%;
+      overflow: hidden;
+    }
+
+    header {
+      text-align: center;
+      padding: 40px;
+      background-color: #f8eafc;
+      border-radius: 20px;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+      position: relative;
+    }
+
+    img {
+      max-width: 150px;
+      border-radius: 50%;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      margin-bottom: 20px;
+    }
+
+    h1 {
+      font-size: 3em;
+      color: #a34ea0;
+      margin-bottom: 10px;
+      animation: fadeIn 2s ease-in-out;
+    }
+
+    p {
+      font-size: 1.2em;
+      color: #555;
+      line-height: 1.6;
+      max-width: 700px;
+      margin: 0 auto 30px;
+      animation: fadeIn 2.5s ease-in-out;
+    }
+
+    .button-link {
+      background-color: #a34ea0;
+      color: white;
+      padding: 12px 24px;
+      text-decoration: none;
+      font-size: 18px;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+      transition: background 0.3s ease;
+      animation: fadeIn 3s ease-in-out;
+    }
+
+    .button-link:hover {
+      background-color: #892e85;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 40px;
+      font-style: italic;
+      color: #777;
+      animation: fadeIn 3.5s ease-in-out;
+    }
+
+    audio {
+      display: block;
+      margin: 30px auto 0;
+    }
+
+    /* Floating hearts */
+    .heart {
+      position: absolute;
+      width: 30px;
+      height: 30px;
+      background-image: url('heart.png'); /* Add your heart image */
+      background-size: contain;
+      background-repeat: no-repeat;
+      animation: drift 10s linear infinite;
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    @keyframes drift {
+      0% { top: -30px; left: 50%; opacity: 1; }
+      100% { top: 120%; left: 30%; opacity: 0; transform: rotate(360deg); }
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="image one.webp" alt="Loving Mother">
+    <h1>Happy Mother's Day! 💐</h1>
+    <p>
+      Today is a day for celebrating not just a mother’s role, but her soul—
+      the gentle hands, the fierce heart, the quiet wisdom, and the radiant love.
+      Your presence is a gift wrapped in compassion, tied with hope, and sealed with a kiss.
+    </p>
+    <a class="button-link" href="Alain.html">💖 Read the Reasons Why You're Our Wonder</a>
+  </header>
+
+  <footer>
+    With all my heart, today and always 🌷
+  </footer>
+
+  <audio controls autoplay loop>
+    <source src="your-mothers-day-music.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+
+</body>
+</html>
